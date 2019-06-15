@@ -1,0 +1,47 @@
+.search {
+    .champsSearch {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        input {
+            margin: 30px;
+            border: 1px solid black;
+            height: 34px;
+            box-shadow: 5px 2px 2px rgb(104, 100, 100);
+        }
+        button {
+            height: 34px;
+            box-shadow: 5px 2px 2px rgb(104, 100, 100);
+            background-color: rgb(108, 170, 199);
+        }
+    }
+    .tooltip {
+        margin-left: 40%;
+    }
+    h2 {
+        margin: 30px;
+        color: rgb(22, 131, 158);
+    }
+    h4 {
+        margin: 30px;
+        color:rgb(22, 131, 158);
+    }   
+    .button {
+        background:transparent;
+        border:none;
+    }
+    .paging {
+        margin-left: 42%;
+        button {
+        margin: 30px;
+        }
+    }
+    .champsAvance {
+        font: 1em;
+        input {
+            margin-right: 10px;
+        }
+    }
+    select {
+        margin: 10px;
+    }
+}

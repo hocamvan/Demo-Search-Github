@@ -1,0 +1,91 @@
+// https://codepen.io/Siddharth11/pen/xbGrpG
+
+.load {
+	$grey: rgba(11, 90, 236, 0.5);
+	$blue: rgba(12, 127, 180, 0.5);
+	
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(180deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	
+	@keyframes rotate2 {
+		0% {
+			transform: rotate(0deg);
+			border-top-color: $grey;
+		}
+		50% {
+			transform: rotate(180deg);
+			border-top-color: $blue;
+		}
+		100% {
+			transform: rotate(360deg);
+			border-top-color: $grey;
+		}
+	}
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+	body {
+		background: #f9f9f9;
+		padding-bottom: 100px;
+	}
+	
+	h1, h3 {
+		display: block;
+		margin: 0px auto;
+		text-align: center;
+		font-family: 'Tahoma';
+		font-weight: lighter;
+		color: $grey;
+		letter-spacing: 1.5px;
+	}
+	
+	h1 {
+		margin: 50px auto;
+	}
+	
+	@mixin loaderDivMixin {
+		border-radius: 50%;
+		padding: 8px;
+		border: 2px solid transparent;
+		animation: rotate linear 3.5s infinite;
+	}
+	
+	.loader {
+		position: relative;
+		margin: 75px auto;
+		width: 150px;
+		height: 150px;
+		display: block;
+		overflow: hidden;
+		div {
+			height: 100%;
+		}
+	}
+	
+	/* loader 1 */
+	.loader1, .loader1 div {
+		@include loaderDivMixin;
+		border-top-color: $grey;
+		border-bottom-color: $blue;
+	}
+	
+	div:hover {
+		animation-play-state: paused;
+	}
+	
+	.loader, .loader * {
+		will-change: transform;
+	}
+	
+}

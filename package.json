@@ -3,7 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@devexpress/dx-react-core": "^1.11.0",
+    "@devexpress/dx-react-grid": "^1.11.0",
+    "@devexpress/dx-react-grid-bootstrap4": "^1.11.0",
+    "@icon/open-iconic": "^1.1.1",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
@@ -27,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
   }
 }
