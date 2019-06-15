@@ -16,7 +16,6 @@ import {
 import {
     Grid,
     Table,
-    VirtualTable,
     Toolbar,
     SearchPanel,
     PagingPanel,
@@ -196,16 +195,16 @@ export const Search = () => {
                             <PagingState
                                 currentPage={currentPage}
                                 onCurrentPageChange={handleCurrentPageChange}
-                                pageSize = {pageSize}
+                                pageSize={pageSize}
                             />
                             <CustomPaging
                                 totalCount={totalCount}
                             />
-                            <VirtualTable
+                            <Table
                                 cellComponent={Cell}
                                 columnExtensions={tableColumnExtensions}
                                 tableComponent={TableComponent}
-                                height={450} />
+                            />
                             <TableHeaderRow showSortingControls />
                             <TableRowDetail
                                 contentComponent={RowDetail}
